@@ -1,4 +1,4 @@
-package model;
+package myllycs.model;
 
 import java.util.List;
 

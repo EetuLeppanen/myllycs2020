@@ -1,4 +1,4 @@
-package web;
+package myllycs.web;
 
 import java.util.Optional;
 import java.util.List;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import model.Pelaaja;
-import model.PelaajaRepository;
-import model.Rooli;
-import model.RooliRepository;
+import myllycs.model.Pelaaja;
+import myllycs.model.PelaajaRepository;
+import myllycs.model.Rooli;
+import myllycs.model.RooliRepository;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 

@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
+import myllycs.model.Pelaaja;
+import myllycs.model.PelaajaRepository;
+import myllycs.model.Rooli;
+import myllycs.model.RooliRepository;
+import myllycs.model.User;
+import myllycs.model.UserRepository;
 
-import model.Pelaaja;
-import model.PelaajaRepository;
-import model.Rooli;
-import model.RooliRepository;
-import model.User;
-import model.UserRepository;
 
 @SpringBootApplication
 public class PelaajaApplication {

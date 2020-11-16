@@ -1,4 +1,4 @@
-package model;
+package myllycs.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,8 +21,7 @@ public class Pelaaja {
    @JsonIgnore
    @JoinColumn(name="rooliId")
    private Rooli rooli;
-   
-   
+    
     public Pelaaja() {
     	
     

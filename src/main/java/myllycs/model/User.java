@@ -1,4 +1,4 @@
-package model;
+package myllycs.model;
 
 import javax.persistence.*;
 
