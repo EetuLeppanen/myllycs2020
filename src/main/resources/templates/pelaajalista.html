@@ -26,7 +26,7 @@
     		<td th:text="${pelaaja.rooli.name}"></td> 
     		
     		
-    		<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${pelaaja.id})}">Delete</a></td>
+    		<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${pelaaja.id})}"class="btn btn-danger">Poista</a></td>
     		<td><a th:href="@{/modify/{id}(id=${pelaaja.id})}"  class="btn btn-warning">Modify</a></td>    
     	</tr>
     	
