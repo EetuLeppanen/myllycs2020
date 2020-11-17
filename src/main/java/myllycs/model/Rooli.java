@@ -22,6 +22,12 @@ public class Rooli {
 
         public Rooli() {}
         
+        public Rooli(long rooliId, String name) {
+        	super();
+        	this.rooliId = rooliId;
+        	this.name = name;
+        }
+        
         public Rooli(String name) {
         	super();
         	this.name = name;
