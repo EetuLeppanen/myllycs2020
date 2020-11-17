@@ -47,6 +47,8 @@ public class PelaajaApplication {
 		rorepository.save(new Rooli("In-Game Leader"));
 		rorepository.save(new Rooli("Rifler"));
 		rorepository.save(new Rooli("AWP"));
+		rorepository.save(new Rooli("BOT"));
+		rorepository.save(new Rooli("Coach"));
 		prepository.deleteAll();
 		prepository.save(new Pelaaja("Atte Ampuja", "1999", 150000, rorepository.findByName("Rifler").get(0)));
 		prepository.save(new Pelaaja("Joonas Joonaksela", "2005", 13, rorepository.findByName("AWP").get(0)));

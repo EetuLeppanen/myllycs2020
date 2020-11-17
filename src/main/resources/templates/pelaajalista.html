@@ -22,7 +22,7 @@
     	<tr th:each = "pelaaja : ${pelaajat}">
     		<td th:text="${pelaaja.name}"></td> 
     		<td th:text="${pelaaja.birthyear}"></td>
-    		<td th:text="${pelaaja.palkka}"></td>  		
+    		<td th:text="${pelaaja.palkka} euroa"></td>  		
     		<td th:text="${pelaaja.rooli.name}"></td> 
     		
     		
