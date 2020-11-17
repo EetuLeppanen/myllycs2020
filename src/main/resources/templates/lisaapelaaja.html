@@ -4,13 +4,14 @@
     <title>Pelaajalista</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
-
+    
 </head>
 <body>
 	<h1>Lisää pelaaja</h1>
 	<div>
 		<form th:object="${pelaaja}" th:action="@{save}" action="#" method="post">
 		  	<label for="name">Name</label>
+		  	<i class="fa fa-user icon"></i>
 			<input type="text" id="name" th:field="*{name}" />
 			<div style="clear: both; display: center; height: 10px;"></div>
 		  	<label for="birthyear">Birthyear</label>
