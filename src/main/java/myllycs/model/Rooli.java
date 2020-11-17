@@ -49,19 +49,6 @@ public class Rooli {
             this.name = name;
         }
 
-        public List<Pelaaja> getPelaajat() {
-            return pelaajat;
-        }
-
-        public void setPelaajat(List<Pelaaja> pelaajat) {
-            this.pelaajat = pelaajat;
-        }
-
-        
-        @Override
-    	public String toString() {
-    		return "Rooli [rooliId=" + rooliId + ", name=" + name + "]";
-    	}
-
+ 
 
 }
