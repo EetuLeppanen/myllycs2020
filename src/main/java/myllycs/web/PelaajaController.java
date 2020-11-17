@@ -59,7 +59,7 @@ public class PelaajaController {
         return "redirect:pelaajalista";
     }
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String deletePelaaja(@PathVariable("id") Long pelaajaId, Model model) {
         repository.deleteById(pelaajaId);
         return "redirect:../pelaajalista";
