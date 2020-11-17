@@ -19,7 +19,7 @@
 		  	<label for="palkka">Palkka</label>
 			<input type="text" th:field="*{palkka}" /><br />
 			<div style="clear: both; display: block; height: 10px;"></div>
-			<label for="roolilist">Rooli</label>
+			<label for="rooli">Rooli</label>
 			<select id="roolilist" th:field="*{rooli}" class="form-control">
             <option th:each="rooli: ${roolit}" 
                     th:value="${rooli.rooliId}" 
