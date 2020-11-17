@@ -43,6 +43,7 @@ public class PelaajaApplication {
         
         
 		log.info("save a couple players");
+		rorepository.deleteAll();
 		rorepository.save(new Rooli("In-Game Leader"));
 		rorepository.save(new Rooli("Rifler"));
 		rorepository.save(new Rooli("AWP"));
