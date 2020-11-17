@@ -6,7 +6,11 @@
     <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
 </head>
 <body>
-	<h1>Pelaajalista</h1>
+
+ <h1 th:inline="text">Hei [[${#httpServletRequest.remoteUser}]]!</h1><br>
+ 
+ 
+	<h1>Roster</h1>
     <table class="table table-striped">
 		<tr>
 		    <th>Name</th>
@@ -19,7 +23,7 @@
     		<td th:text="${pelaaja.name}"></td> 
     		<td th:text="${pelaaja.birthyear}"></td>
     		<td th:text="${pelaaja.palkka}"></td>  		
-    		<td th:text="${book.rooli.name}"></td> 
+    		<td th:text="${pelaaja.rooli.name}"></td> 
     		
     		<td sec:authorize="hasRole('ADMIN')"><a th:href="@{/delete/{id}(id=${pelaaja.id})}">Delete</a></td>
     		<td><a th:href="@{/modify/{id}(id=${pelaaja.id})}"  class="btn btn-warning">Modify</a></td>    
@@ -27,10 +31,10 @@
     	
     	
      </table> 	
-     <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+    
      <form th:action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
             </form>
-     <a href="/add" class="btn btn-success">Lisää Pelaaja</a>
+     <a href="/lisaapelaaja" class="btn btn-success">Lisää Pelaaja</a>
 </body>
 </html>

@@ -7,6 +7,8 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
@@ -18,6 +20,8 @@ public class User {
 
     @Column(name = "role", nullable = false)
     private String role;
+    
+ 
     
     public User() {
     }

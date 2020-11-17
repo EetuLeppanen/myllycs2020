@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import myllycs.model.Pelaaja;
 import myllycs.model.PelaajaRepository;
-import myllycs.model.Rooli;
 import myllycs.model.RooliRepository;
 
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -31,6 +30,7 @@ public class PelaajaController {
     private RooliRepository rorepository;
 
 
+    
     @RequestMapping(value="/pelaajalista")
     public String pelaajaLista(Model model) {
         model.addAttribute("pelaajat", repository.findAll());
@@ -68,6 +68,12 @@ public class PelaajaController {
     public String editPelaaja(@PathVariable("id") Long pelaajaId, Model model) {
         model.addAttribute("pelaaja", repository.findById(pelaajaId));
         model.addAttribute("roolit", rorepository.findAll());
-        return "modifybook";
+        return "muokkaapelaajaa";
     }
+    
+    @RequestMapping(value= {"/", "/login"}, method = RequestMethod.GET)
+    public String login() {
+        return "login";
+    }
+    
 }
