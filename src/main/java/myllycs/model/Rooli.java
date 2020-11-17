@@ -8,23 +8,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.FetchType;
+
 
 @Entity
 public class Rooli {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
         private Long rooliId;
-        
-
 		private String name;
 
         @OneToMany(cascade = CascadeType.ALL, mappedBy = "rooli")
         private List<Pelaaja> pelaajat;
 
         public Rooli() {}
-
-       
         
         public Rooli(String name) {
         	super();
