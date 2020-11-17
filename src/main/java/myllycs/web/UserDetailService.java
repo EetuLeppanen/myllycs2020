@@ -10,9 +10,7 @@ import org.springframework.stereotype.Service;
 import myllycs.model.User;
 import myllycs.model.UserRepository;
 
-/**
- * This class is used by spring security to authenticate and authorize user
- **/
+
 @Service
 public class UserDetailService implements UserDetailsService  {
 	private final UserRepository repository;
