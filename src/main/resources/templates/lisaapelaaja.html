@@ -10,14 +10,14 @@
 	<h1>Lisää pelaaja</h1>
 	<div>
 		<form th:object="${pelaaja}" th:action="@{save}" action="#" method="post">
-		  	<label for="name">Name</label>
+		  	<label for="name">Nimi</label>
 		  	<i class="fa fa-user icon"></i>
 			<input type="text" id="name" th:field="*{name}" />
 			<div style="clear: both; display: center; height: 10px;"></div>
-		  	<label for="birthyear">Birthyear</label>
+		  	<label for="birthyear">Syntymävuosi</label>
 			<input type="text" id="birthyear" th:field="*{birthyear}" />
 			<div style="clear: both; display: center; height: 10px;"></div>
-		  	<label for="palkka">Palkka (mk)</label>
+		  	<label for="palkka">Palkka (euroina)</label>
 			<input type="text" th:field="*{palkka}" /><br />
 			<div style="clear: both; display: center; height: 10px;"></div>
 			<label for="rooli">Rooli</label>
