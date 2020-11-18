@@ -42,7 +42,7 @@ public class PelaajaApplication {
         urepository.save(user2);
         
         
-		log.info("tallennetaan muuttama pelaaja sekä rooli");
+		log.info("tallennetaan muutama pelaaja sekä rooli");
 		rorepository.deleteAll();
 		rorepository.save(new Rooli("In-Game Leader"));
 		rorepository.save(new Rooli("Rifler"));
