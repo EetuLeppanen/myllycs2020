@@ -28,6 +28,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests().anyRequest().authenticated()
         .and()
       .formLogin()
+      
+      //loginsivuna toimii login, josta aina uudelleenohjaus pelaajalistaan
           .loginPage("/login")
           .defaultSuccessUrl("/pelaajalista")
           .permitAll()
